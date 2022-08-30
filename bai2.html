@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let array = [1,2,3,4,5,6]
+    let index = +prompt("Nhập số index bất kỳ");
+    let x = +prompt("Nhập số x bất kỳ");
+    function insertNumberToArray(array,x,index){
+        for (let i =0; i <= arr.length;i++){
+            if (i === index){
+                for ( let j = (array.length - 1);j>=i; j--){
+                    array[j + 1]= array[j];
+                }
+                array[i]=x;
+            }
+            return array;
+        }
+    }
+    let result = insertNumberToArray(insertNumberToArray);
+    console.log(result)
+</script>
+</body>
+</html>
